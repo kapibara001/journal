@@ -1,0 +1,11 @@
+body {
+    background-color: lightgreen;   
+}
+
+.yellow-item {
+    display: block;
+    background-color: yellow;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
