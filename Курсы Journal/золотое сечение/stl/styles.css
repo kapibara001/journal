@@ -1,0 +1,49 @@
+.all {
+    display: grid;
+    width: 1800px;
+    height: 1000px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 40% 60%;
+    border: 10px solid black;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-right: 10px solid black;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%;
+    border-bottom: 10px solid black;
+}
+
+.three {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    border-right: 10px solid black;
+}
+
+.four {
+    border-bottom: 10px solid black;
+}
+
+.five {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.six {
+    border-right: 10px solid black; 
+}
+
+.seven {
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.eight {
+    border-bottom: 10px solid black; 
+}
