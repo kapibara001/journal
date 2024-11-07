@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(236, 186, 120);
+    height: 98vh;
+
+    background-image: url(desks.jpg);
+    min-height: 500px;
+}
+
+.content {
+    background-color: aliceblue;
+    width: 98%;
+    height: 98%;
+
+    border-radius: 2cap;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    min-height: 10%;
+
+    background-color: rgb(134, 140, 241);
+
+    color: white;
+    font-size: 60px;
+
+    border-bottom-style: double;
+    border-bottom-color: black;
+}
+
+.notes {
+    height: 60px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}

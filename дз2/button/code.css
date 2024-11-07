@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    min-height: 40px;
+    min-width: auto;
+
+    font-size: 20px;
+
+    border-style: double;
+    border-color: grey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    padding: 12px 30px;
+    background-color: rgb(255, 186, 209);
+}

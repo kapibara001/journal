@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-red {
+    background-color: red;
+    border-radius: 10px;
+    min-height: 70px;
+    width: 300px;
+
+    text-align: center;
+    margin-top: 2;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+    margin: 3%;
+    height: 5vh;
+
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: azure;
+
+    color: white;
+    font-size: 21px;
+}
+
+.rep {
+    background-color: orange;
+    color: black;
+}

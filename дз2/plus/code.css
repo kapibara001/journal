@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: purple;
+}
+
+.square {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    background-color: rgb(224, 172, 0);
+
+    font-size: 150px;
+}
+
+.text {
+    color: white;
+
+    margin-left: 28%;
+    margin-top: 6%;
+}
