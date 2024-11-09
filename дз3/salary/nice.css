@@ -1,0 +1,66 @@
+.all-cont {
+    margin: 10px;
+    max-width: max-content;
+}
+
+.up {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.money {
+    border: solid 1px;
+    border-color: lightgrey;
+    border-radius: 4px;
+
+    width: max-content;
+    padding: 6px;
+
+    font-size: 20px;
+}
+
+.up-text {
+    margin-left: 10px;
+    max-width: 150px;
+}
+
+.mounths {
+    background-color: lightgrey;
+    color: rgb(81, 81, 81);
+    max-width: max-content;
+
+    border: solid grey 1px;
+    border-radius: 7px;
+}
+
+.mounth {
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+
+.poln {
+    color: blue;
+}
+
+.last-left a {
+    color: orange;
+    float: right;
+}
+
+.nums {
+    display: inline-block;
+    max-width: max-content;
+    height: 60px;
+}
+
+.first, .second, .third, .fourth, .fivth, .sixth {
+    border-top: solid blue;
+    text-align: center; 
+    color: blue;
+}
+
+.first {
+    margin-top: 10px;
+    
+}
