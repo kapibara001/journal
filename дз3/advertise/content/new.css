@@ -1,0 +1,35 @@
+body {
+    display: flex;
+}
+
+img {
+    max-width: 35px;
+    max-height: 35px;
+    padding-top: 5.5%;
+}
+
+h3 {
+    margin: 0;
+}
+
+.times {
+    max-width: max-content;
+}
+
+.december {
+    display: flex;
+}
+
+.december h2 {
+    margin-left: 14px;
+}
+
+.discount {
+    max-width: max-content;
+    border: dashed red 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 20px;
+    max-height: max-content;
+}
+
