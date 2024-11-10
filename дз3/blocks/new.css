@@ -1,0 +1,18 @@
+body {
+    background-color: aqua;
+    margin: 20px;
+}
+
+.all-cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 8fr 16fr;
+
+    height: 100px;
+    padding: 20px;
+}
+
+.inli {
+    display: block;
+    margin: 0 5px;
+    background-color: white;
+}
