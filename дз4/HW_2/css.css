@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    min-height: 100vh;
+    padding: 20px 0;
+
+    background-color: grey;
+}
+
+.text {
+    display: block;
+
+    max-height: max-content;
+    width: max-content;
+
+    text-align: center;
+    color: white;
+}
