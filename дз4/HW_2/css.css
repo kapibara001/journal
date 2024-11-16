@@ -2,22 +2,33 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
 .menu {
-    display: flex;
-    justify-content: center;
-    max-width: 100px;
-    min-height: 100vh;
-    padding: 20px 0;
+    display: none;
+    grid-template-rows: 100px 120px 120px 120px 120px;
+
+    width: 100px;
+    height: 100vh;
 
     background-color: grey;
 }
 
+.text, .pict {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 .text {
-    display: block;
-
-    max-height: max-content;
-    width: max-content;
-
-    text-align: center;
     color: white;
+    font-size: 22px;
+}
+
+.pict {
+    display: flex;
+
 }

@@ -3,16 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="new.css">
-    <title>Document</title>
+    <title>Таблица с фиксированным заголовком и столбцом</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        tr td:first-child {
+            background-color: #f9f9f9;
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <div class="all-cont">
-        <div class="inli"></div>
-        <div class="inli"></div>
-        <div class="inli"></div>
-        <div class="inli"></div>
-        <div class="inli"></div>
+    <div style="width: 600px; overflow: auto; margin: 20px auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Возраст</th>
+                    <th>Город</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Пример содержимого таблицы -->
+                <tr>
+                    <td>1</td>
+                    <td>Анна</td>
+                    <td>Иванова</td>
+                    <td>25</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Петр</td>
+                    <td>Сидоров</td>
+                    <td>30</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Мария</td>
+                    <td>Кузнецова</td>
+                    <td>27</td>
+                    <td>Казань</td>
+                </tr>
+                <!-- Добавьте еще строки для проверки прокрутки -->
+                <tr>
+                    <td>4</td>
+                    <td>Иван</td>
+                    <td>Смирнов</td>
+                    <td>34</td>
+                    <td>Новосибирск</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Ольга</td>
+                    <td>Попова</td>
+                    <td>29</td>
+                    <td>Екатеринбург</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
