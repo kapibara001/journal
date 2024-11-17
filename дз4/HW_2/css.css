@@ -9,7 +9,7 @@ img {
 }
 
 .menu {
-    display: none;
+    display: grid;
     grid-template-rows: 120px 120px 120px 120px 120px;
 
     min-width: 80px;
@@ -18,17 +18,76 @@ img {
     background-color: grey;
 }
 
-.second-menu {
+.menu:hover {
+    display: none;
+}
+
+.menu:hover ~ .second-menu {
     display: flex;
+}
+
+.pencil:hover, .heart:hover, .clocks:hover, .shild:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.second-menu {
+    display: none;
+    flex-direction: column;
     width: 250px;
     height: 100vh;
     background-color: grey;
     z-index: 1;
 }
 
+.second-menu:hover {
+    display: flex;
+}
+
+.second-menu:hover ~ .menu {
+    display: none;
+}
+
 .sec-m-str {
+    display: inline;
     width: 250px;
     height: 120px;
+    font-size: 20px;
+    color: white;
+}
+
+.sec-m-str p {
+    margin-top: 49px;
+    width: 80px;
+    height: 120px;
+    max-width: max-content;
+    margin-left: 8px;
+}
+
+.pencil, .heart, .clocks, .shild {
+    display: flex;
+    width: 250px;
+    height: 120px;
+}
+
+.pictu1, .pictu2, .pictu3, .pictu4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 120px;
+}
+
+.EDIT1, .EDIT2, .EDIT3, .EDIT4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 120px;
+
+    color: white;
+    font-size: 20px;
 }
 
 .text, .pict {
