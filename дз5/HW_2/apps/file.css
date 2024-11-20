@@ -6,7 +6,7 @@ p {
     margin: 0;
 }
 
-.container {
+.string {
     display: grid;
     grid-template-columns: 7fr 10fr 7fr;
 }
