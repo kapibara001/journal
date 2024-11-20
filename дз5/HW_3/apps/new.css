@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(0, 112, 122);
+    margin: 0;
+    min-width: 1000px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+    background-color: rgb(10 72 78 / 70%);
+
+    opacity: 1;
+}
+
+.header b {
+    color: white;
+    font-size: 20px;
+
+    padding-left: 100px;
+}
+
+.content {
+    max-height: max-content;
+    min-width: 100vh;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    height: 660px;
+    margin: 5%;
+
+    max-width: 400px;
+    min-width: 300px;
+
+    background-color: rgb(203, 201, 201);
+    padding: 5% 3%;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.comments {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.text-comment {
+    font-size: 20px;
+}
+
+.apps-comment {
+    grid-template-columns: 16% 24% 16% 16% 32%;
+}
