@@ -1,0 +1,33 @@
+:root {
+    --color: black;
+}
+
+body {
+
+}
+
+.allin {
+    width: 300px;
+    height: 300px;
+
+    border: 3px solid var(--color);
+    border-radius: 50%;
+}
+
+.center {
+    width: 4%;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+    background-color: var(--color);
+
+    margin: 49.5%;
+
+    animation: anim 2s linear infinite;
+}
+
+.hour {
+    width: 45%;
+    height: 45%;
+    border-bottom: 3% solid var(--color);
+}
