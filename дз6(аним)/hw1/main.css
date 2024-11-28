@@ -1,33 +1,68 @@
-:root {
-    --color: black;
-}
-
 body {
-
-}
-
-.allin {
-    width: 300px;
-    height: 300px;
-
-    border: 3px solid var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #282c34;
+  }
+  
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #fff;
     border-radius: 50%;
-}
-
-.center {
-    width: 4%;
-    aspect-ratio: 1/1;
-
+    border: 5px solid #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
     border-radius: 50%;
-    background-color: var(--color);
-
-    margin: 49.5%;
-
-    animation: anim 2s linear infinite;
-}
-
-.hour {
-    width: 45%;
-    height: 45%;
-    border-bottom: 3% solid var(--color);
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hour-hand,
+  .minute-hand {
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    background: #000;
+    top: 50%;
+    left: 30%;
+    transform-origin: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  .hour-hand {
+    animation: rotate-hour 12s linear infinite; /* 12 часов */
+  }
+  
+  .minute-hand {
+    animation: rotate-minute 1s linear infinite; /* 1 час */
+  }
+  
+  @keyframes rotate-hour {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-minute {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
