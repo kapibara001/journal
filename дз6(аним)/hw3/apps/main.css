@@ -32,17 +32,30 @@ img {
 }
 
 .block:hover {
-    animation: anim 1s forwards 1;
+    .image {
+        animation: anim-image 1s forwards 1;
+        z-index: 1;
+        cursor: cell;
+    }
+    .text {
+        animation: anim-text 1s forwards 1;
+    }
 }
 
-@keyframes anim {
+@keyframes anim-image {
     30% {
         filter: brightness(50%);
     }
 
     100% {
-        background-color: rgba(0, 0, 0, 0.5);
         transform: scale(1.07);
         filter: brightness(50%);
     }
+}
+
+@keyframes anim-text {
+    30%, 100% {
+        filter: brightness(50%);
+    }
+
 }
