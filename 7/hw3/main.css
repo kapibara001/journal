@@ -1,0 +1,45 @@
+:root {
+    --main-padding-left: 5%;
+}
+
+header, menu, .aside1, .aside2 {
+    display: flex;
+    align-items: center;
+
+    font-size: 13px;
+    padding-left: var(--main-padding-left);
+    color: white;
+}
+
+header {
+    height: 50px;
+
+    background-color: rgb(188, 43, 99);
+}
+
+menu {
+    margin: 7px 0px;
+
+    height: 50px;
+
+    background-color: rgb(115, 6, 48);
+}
+
+section {
+    max-width: 60%;
+}
+
+.aside1 {
+    width: 25%;
+    height: 60px;
+    background-color: rgb(201, 18, 94);
+    margin-bottom: 7px;
+}
+
+.aside2 {
+    width: 25%;
+    height: 100px;
+    padding-top: 15px;
+    background-color: rgb(201, 18, 94);
+}
+
