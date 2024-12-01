@@ -1,0 +1,76 @@
+input {
+    border: 3px solid black;
+}
+
+/* Изменяем текст надписи в окне ввода */ 
+.main::-webkit-input-placeholder {
+    color: red;
+    font-size: 20px;
+    padding-left: 10px;
+} 
+
+/* Только в мазила(-moz) брузер */
+.main::-moz-placeholder {
+    color: aqua;
+}
+
+.range {
+    width: 100%;
+}
+
+.range::-webkit-slider-thumb {
+    color: rgb(106, 255, 0);
+}
+
+.checkbox {
+    display: none;
+}
+
+/* Мы связывеи(не понял до конца) */
+.checkbox + label {
+    width: 100px;
+    height: 100px;
+
+    display: block;
+    border: 1px solid black;
+}
+
+.checkbox:checked + label {
+    background-color: blue;
+}
+
+.radio + label {
+    width: 100px;
+    height: 150px;
+
+    border-radius: 50%;
+    border: 3px solid red;
+
+    display: block;
+}
+
+.radio:checked + label {
+    background-color: aqua;
+}
+
+.square {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+}
+
+.che1 {
+    display: none;
+}
+.che1 + label {
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid black;
+    display: block;
+    z-index: -1;
+}
+.che1:checked + label {
+    background-image: url("asd.jpg");
+    background-size: cover;
+}
