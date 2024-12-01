@@ -2,7 +2,7 @@
     --main-padding-left: 5%;
 }
 
-header, menu, .aside1, .aside2 {
+header, menu, .aside1, .aside2, .aside3, footer {
     display: flex;
     align-items: center;
 
@@ -29,6 +29,11 @@ section {
     max-width: 60%;
 }
 
+footer {
+    background-color: rgb(115, 6, 48);
+    padding: 15px var(--main-padding-left);
+}
+
 .aside1 {
     width: 25%;
     height: 60px;
@@ -43,3 +48,11 @@ section {
     background-color: rgb(201, 18, 94);
 }
 
+.aside3 {
+    width: 7%;
+    height: max-content;
+
+    padding: 0;
+
+    background-color: rgb(201, 18, 94);
+}

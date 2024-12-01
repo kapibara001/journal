@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
+p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+img {
+    max-width: 40px;
+    margin: 5px;
+    filter:  grayscale(1);
+}
+
+img:hover {
+    cursor: pointer;
+    filter:  grayscale(0);
+}
+
+.all {
+    padding: 15px;
+
+    width: 80%;
+
+    background-color: rgb(44, 64, 136);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    height: max-content;
+
+    color: white;
+}
+
+.first, .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
