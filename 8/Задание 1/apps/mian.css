@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(0, 56, 51);
+    padding: 30px;
+}
+
+img {
+    width: 70px;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+
+.user {
+    width: 400px;
+    height: 60px;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.user-text {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.author, .comments, .published, .updated, .user-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 12px;
+}
+
+@media (width < 600px) {
+    img {
+        width: 80%;
+        aspect-ratio: 1/1;
+    }
+    .navig {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .zagolovok {
+        margin-bottom: 20px;
+    }
+    .user {
+        grid-template-columns: 40% 60%
+    }
+    .user-text {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+    .user-text p {
+        font-size: 15px;
+        margin: 6px;
+    }
+}
