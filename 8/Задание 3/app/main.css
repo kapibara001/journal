@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: max-content;
+}
+
+.header img {
+    height: 60px;
+}
+
+.logo, .mymailA {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+.logo p {
+    font-size: 20px;
+}
+
+.mymailA {
+    justify-content: flex-end;
+    position: relative;
+}
+
+.allin   {
+    display: grid;
+    grid-template-columns: 200px 75%;
+
+    margin: 10px 30px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+
+    padding: 5px 20px;
+}
+
+.category:hover {
+    background-color: rgb(255, 239, 239);
+}
+
+.category img{ 
+    width: 45px;
+    padding-right: 20px;
+}
+
+.category p {
+    padding: 0;
+    font-size: 20px;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+}
+
+.favourites {
+    width: 3%;
+    margin-right: 20px;
+}
+
+.favourites img {
+    width: 25px;
+}
+
+.letter-text {
+    display: flex;
+    width: 70%;
+}
+
+.sender-to-taker {
+    width: 30%;
+}
+
+.main-idea {
+    width: max-content;
+    margin: 0 10px;
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    max-width: 260px;
+
+    color: rgb(169, 169, 169);
+}
+
+.file-time {
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 5px;
+
+    width: 10%;
+    height: 100%;
+}
+
+.file-time img {
+    width: 30px;
+}
+
+.recipient-date {
+    width: 17%;
+    font-size: 17px;
+    text-align: right;
+}
+
+@media (550px <= width <= 800px) {
+    .letter-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .letter-text p {
+        margin: 0;
+    }
+    .main-idea {
+        margin: 0;
+    }
+    .text {
+        max-width: 80%;
+    }
+    .sender-to-taker {
+        width: max-content;
+    }
+}
+
+@media (500 <= width < 550px) {
+    .allin {
+        grid-template-columns: 20% 80%;
+    }
+    .category p {
+        display: none;
+    }
+    .category img {
+        padding-right: 0;
+    }
+    .categories {
+        width: max-content;
+    }
+    .letter-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .letter-text p {
+        margin: 0;
+    }
+    .main-idea {
+        margin: 0;
+    }
+    .text {
+        max-width: 80%;
+    }
+    .sender-to-taker {
+        width: max-content;
+    }
+}
+
+@media (width < 500px) {
+    .header, .allin {
+        display: none;
+    }
+    body::before {
+        content: 'Недостаточная минимальная ширина страницы';
+    }
+}
