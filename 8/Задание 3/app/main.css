@@ -19,6 +19,10 @@ body {
     padding: 10px 20px;
 }
 
+.logo:hover, .mymailA:hover {
+    cursor: pointer;
+}
+
 .logo p {
     font-size: 20px;
 }
@@ -135,18 +139,19 @@ body {
     }
 }
 
-@media (500 <= width < 550px) {
+@media (500px <= width < 550px) {
     .allin {
-        grid-template-columns: 20% 80%;
-    }
-    .category p {
-        display: none;
-    }
-    .category img {
-        padding-right: 0;
+        margin: 0;
+        grid-template-columns: 18% 80%;
     }
     .categories {
         width: max-content;
+    }
+    .category p {
+        display: none;        
+    }
+    .category img {
+        padding-right: 0;
     }
     .letter-text {
         display: flex;
@@ -171,6 +176,6 @@ body {
         display: none;
     }
     body::before {
-        content: 'Недостаточная минимальная ширина страницы';
+        content: 'Недостаточная минимальная ширина страницы (<500 пикселей)';
     }
 }
