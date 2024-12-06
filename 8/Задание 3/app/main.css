@@ -34,7 +34,7 @@ body {
 
 .allin   {
     display: grid;
-    grid-template-columns: 200px 75%;
+    grid-template-columns: 200px 82%;
 
     margin: 10px 30px;
 }
@@ -74,6 +74,24 @@ body {
 
 .favourites img {
     width: 25px;
+}
+
+.favo {
+    display: block;
+    background-image: url("https://www.svgrepo.com/show/257711/favourite-star.svg");
+}
+
+.favo + label {
+    width: 30px;
+    height: 30px;
+
+    background-image: url("https://www.svgrepo.com/show/257711/favourite-star.svg");
+    display: block;
+}
+
+.favo:checked + label {
+    background-image: url("https://www.svgrepo.com/show/292167/favourite-star.svg");
+    background-size: cover;
 }
 
 .letter-text {
