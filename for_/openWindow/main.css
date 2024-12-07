@@ -1,0 +1,25 @@
+#main {
+    display: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+button:focus + #main {
+    display: block;
+}
+
+#close {
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: antiquewhite;
+}
+
+.window {
+    width: 60%;
+    height: 300px;
+    background-color: aqua;
+    border: 3px solid yellow;
+    border-radius: 20px;
+}
