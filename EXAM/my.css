@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 222, 222);
+}
+img {
+    width: 100%;
+}
+
+.zag {
+    font-family: 'TeX Gyre Adventor';
+
+    padding: 20px 30px;
+    margin: 0;
+
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.panel {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+
+    background-color: rgb(255, 255, 255);
+
+    border-right: 3px solid grey; 
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    height: max-content;
+
+    padding: 15px 20px;
+
+    cursor: pointer;
+}
+
+.page:hover {
+    color: white;
+    background-color: rgb(125, 0, 58);
+}
+
+.page-image {
+    width: 25px;
+    height: 25px;
+}
