@@ -12,11 +12,10 @@ img {
 
     padding: 20px 30px;
     margin: 0;
-
-    border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 .panel {
+    min-width: none;
     width: 200px;
     height: 100vh;
     position: fixed;
@@ -54,4 +53,74 @@ img {
 .page-image {
     width: 25px;
     height: 25px;
+}
+
+.allin {
+    margin-left: 220px;
+    margin-right: 20px;
+    width: 84%;
+}
+
+.general-info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    margin-top: 40px;
+}
+
+.info {
+    background-color: white;
+    height: 150px;
+
+    margin: 0 10px;
+
+    box-shadow: 4px 3px 3px rgb(119, 119, 119);
+}
+
+.inside {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.upper {
+    position: relative;
+    
+    width: 100%;
+    height: 60%;
+
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.upper-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+
+    width: 70px;
+    aspect-ratio: 1/1;
+
+    background-color: rgb(3, 150, 3);
+}
+.upper-img img {
+    width: 30px;
+}
+.upper-text {
+    display: flex;
+    flex-direction: column;
+
+    top: 50%;
+    
+    text-align: right;
+}
+.up-text {
+    font-size: 15px;
+}
+.under-text {
+    font-size: 30px;
+}
+
+.under {
+    height: 40%;
 }
