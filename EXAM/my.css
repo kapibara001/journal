@@ -30,6 +30,7 @@ img {
     flex-direction: column;
     align-items: center;
 
+
     margin-top: 20px;
 }
 
@@ -48,11 +49,15 @@ img {
 .page:hover {
     color: white;
     background-color: rgb(125, 0, 58);
+    .page-image {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 .page-image {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .allin {
@@ -63,7 +68,7 @@ img {
 
 .general-info {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4,1fr);
 
     margin-top: 40px;
 }
@@ -100,11 +105,11 @@ img {
 
     width: 70px;
     aspect-ratio: 1/1;
-
-    background-color: rgb(3, 150, 3);
 }
 .upper-img img {
-    width: 30px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    z-index: 1;
 }
 .upper-text {
     display: flex;
@@ -115,16 +120,43 @@ img {
     text-align: right;
 }
 .up-text {
+    color: rgb(154, 154, 154);
     font-size: 15px;
 }
 .under-text {
-    font-size: 30px;
+    font-size: 22px;
 }
-
 .under {
     display: flex;
     align-items: center;
 
+    font-size: 12px;
+
     color: grey;
     height: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:800px) and (max-width: 1000px) {
+    .general-info {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 200px;
+    }
+    .info {
+        margin-top: 20px;
+    }
+    .upper-img {
+        width: 90px;
+    }
+    .under-text {
+        font-size: 30px;
+    }
 }
