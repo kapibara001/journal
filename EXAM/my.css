@@ -7,6 +7,11 @@ img {
     width: 100%;
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
 .zag {
     font-family: 'TeX Gyre Adventor';
 
@@ -63,6 +68,10 @@ img {
 }
 
 .allin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     margin-left: 220px;
     margin-right: 20px;
     width: 84%;
@@ -70,9 +79,10 @@ img {
 
 .general-info {
     display: grid;
-    grid-template-columns: 275px 275px 275px 275px;
+    grid-template-columns: 278px 278px 278px 278px;
 
     margin-top: 40px;
+
 }
 
 .info {
@@ -144,6 +154,9 @@ img {
     height: max-content;
 
     margin-top: 50px;
+    
+
+
 }
 .statistic-card {
     display: flex;
@@ -177,12 +190,17 @@ img {
 
 @media (min-width:800px) and (max-width: 1000px) {
     .general-info {
-        width: 840px;
+        width: 800px;
         grid-template-columns: 45% 45%;
         grid-template-rows: 200px;
+        margin-top: 0px;
+        justify-content: center;
     }
     .info {
         margin-top: 20px;
+    }
+    .upper-text {
+        margin-top: 10px;
     }
     .upper-img {
         width: 90px;
@@ -190,10 +208,18 @@ img {
     .under-text {
         font-size: 30px;
     }
+    .up-text {
+        font-size: 20px;
+    }
+    .under-text{
+        font-size: 30px;
+    }
 
     .statistic {
-        width: 840px;
+        width: 800px;
         grid-template-columns: 250px 250px 250px;
+        margin-left: 0;
+        justify-content: center;
     }
     .statistic-img {
         height: 100px;
