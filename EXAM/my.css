@@ -122,5 +122,9 @@ img {
 }
 
 .under {
+    display: flex;
+    align-items: center;
+
+    color: grey;
     height: 40%;
 }
