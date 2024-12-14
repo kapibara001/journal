@@ -12,5 +12,7 @@
 
 // let <переменная> - объявление переменной
 
-let username = prompt("Введите свое имя!")
-prompt(username + ", введите пожалуйста свой возраст")
+let admin;
+let admin_name = "John";
+admin = admin_name;
+alert(admin)

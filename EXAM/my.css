@@ -75,8 +75,6 @@ img {
     margin-left: 220px;
     margin-right: 20px;
     width: max-content;
-
-    border-bottom: 1px solid black;
 }
 
 .general-info {
@@ -157,9 +155,6 @@ img {
     height: max-content;
 
     margin-top: 50px;
-    
-
-
 }
 .statistic-card {
     margin: 0 10px;
@@ -292,7 +287,29 @@ img {
     display: flex;
     align-items: center;
 }
+.footer {
+    display: flex;
+    align-items: center;
 
+    width: 100%;
+    height: 40px;
+
+    border-top: 1px solid black;
+}
+.footer-text {
+    margin: 0 20px;
+}
+.footer-text p {
+    display: flex;
+    align-items: center;
+}
+.footer span {
+    display: flex;
+    margin-right: 10px;
+
+    width: 100%;
+    justify-content: end;
+}
 
 
 
@@ -335,8 +352,10 @@ img {
     }
 
     .tasks {
+        height: max-content;
         grid-template-columns: 100%;
         grid-template-rows: 350px 300px;
+        margin-bottom: 10px;
     }
     .tasks-card {
         height: max-content;
@@ -347,7 +366,66 @@ img {
     .tasks-text-in {
         display: flex;
         align-items: center;
-
     }
-    
+}
+@media (min-width: 650px) and (max-width: 800px) {
+    .panel {
+        display: none;
+    }
+    .allin {
+        margin: 0 20px;
+    }
+    .general-info {
+        width: 700px;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 170px 170px;
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .info {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .upper-text {
+        margin-top: 10px;
+    }
+    .upper-img {
+        width: 90px;
+    }
+    .under-text {
+        font-size: 30px;
+    }
+    .up-text {
+        font-size: 20px;
+    }
+    .under-text{
+        font-size: 30px;
+    }
+
+    .statistic {
+        width: 700px;
+        grid-template-columns: 233.33px 233.33px 233.33px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .statistic-img {
+        height: 100px;
+    }
+
+    .tasks {
+        height: max-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 300px;
+        margin-bottom: 10px;
+    }
+    .tasks-card {
+        height: max-content;
+    }
+    .tasks-text {
+        margin: 0;
+    }
+    .tasks-text-in {
+        display: flex;
+        align-items: center;
+    }
 }
