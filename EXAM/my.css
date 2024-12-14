@@ -74,7 +74,7 @@ img {
 
     margin-left: 220px;
     margin-right: 20px;
-    width: 84%;
+    width: max-content;
 }
 
 .general-info {
@@ -87,7 +87,7 @@ img {
 
 .info {
     background-color: white;
-    height: 150px;
+    height: max-content;
 
     margin: 0 10px;
 
@@ -105,7 +105,7 @@ img {
     position: relative;
     
     width: 100%;
-    height: 60%;
+    height: 80px;
 
     border-bottom: 1px solid rgb(197, 197, 197);
 }
@@ -128,7 +128,8 @@ img {
     flex-direction: column;
 
     top: 50%;
-    
+    margin-top: 10px;
+
     text-align: right;
 }
 .up-text {
@@ -145,7 +146,7 @@ img {
     font-size: 12px;
 
     color: grey;
-    height: 60px
+    height: 45px
 }
 
 .statistic {
@@ -159,6 +160,7 @@ img {
 
 }
 .statistic-card {
+    margin: 0 10px;
     display: flex;
     justify-content: center;
 
@@ -183,6 +185,32 @@ img {
     margin: 0;
 }
 
+.tasks {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    height: 400px;
+    width: 100%;
+
+    margin-top: 50px;
+}
+.tasks-card {
+    margin: 0 10px;
+}
+.tasks-header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.tasks-header-text {
+    position: absolute;
+    top: -20px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: yellow;
+}
 
 
 
@@ -224,7 +252,4 @@ img {
     .statistic-img {
         height: 100px;
     }
-    
-
-     
 }
