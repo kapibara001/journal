@@ -1,0 +1,16 @@
+.for_nnn {
+    display: none;
+
+    width: 500px;
+    height: 600px;
+    background-color: rgb(63, 166, 255);
+}
+
+#nnn:checked + label {
+    .for_nnn {
+        display: block;
+        animation: anim 2s;
+        transition: max-height 0.5s ease;
+    }
+}
+

@@ -6,6 +6,9 @@ body {
 img {
     width: 100%;
 }
+label {
+    width: 90%;
+}
 
 .cont {
     display: flex;
@@ -54,16 +57,6 @@ img {
 
     cursor: pointer;
 }
-
-.page:hover {
-    color: white;
-    background-color: rgb(125, 0, 58);
-    .page-image {
-        border-radius: 50%;
-        background-color: rgb(255, 255, 255);
-    }
-}
-
 .page-image {
     width: 30px;
     height: 30px;
@@ -315,6 +308,20 @@ img {
     justify-content: end;
 }
 
+#list:checked + label {
+    .page {
+        color: white;
+        background-color: rgb(125, 0, 58);
+        width: 100%;
+    }
+    .page-image {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+    .allin {
+        display: flex;
+    }
+}
 
 
 @media (min-width:800px) and (max-width: 1000px) {
@@ -443,10 +450,7 @@ img {
 @media (min-width: 500px) and (max-width: 650px) {
     .allin {
         justify-content: center;
-    }
-    .allin .general-info, .allin .statistic, .allin .tasks {
-
-    }    
+    } 
     .zag {
         margin-left: -20px;
     }
@@ -491,10 +495,7 @@ img {
 @media (max-width: 500px) {
     .allin {
         justify-content: center;
-    }
-    .allin .general-info, .allin .statistic, .allin .tasks {
-
-    }    
+    }   
     .zag {
         margin-left: -20px;
     }
