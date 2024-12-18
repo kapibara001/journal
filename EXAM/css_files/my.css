@@ -68,6 +68,9 @@ label {
     margin-right: 20px;
     width: max-content;
 }
+.profile {
+    margin-left: 220px;
+}
 .general-info {
     display: grid;
     grid-template-columns: 278px 278px 278px 278px;
@@ -472,10 +475,11 @@ label {
 
 @media (min-width:800px) and (max-width: 1000px) {
     .general-info {
-        width: calc(100vw - 200px);
-        grid-template-columns: 350px 350px;
+        margin: 0 10px;
+        width: calc(100vw - 210px);
+        min-width: 681px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 170px 170px;
-        margin: 0px;
         justify-content: center;
     }
     .info {
@@ -499,7 +503,7 @@ label {
     }
 
     .statistic {
-        width: 700px;
+        width: clac(100vw - 200px);
         grid-template-columns: 233.33px 233.33px 233.33px;
         margin-left: 0;
         justify-content: center;
@@ -528,6 +532,7 @@ label {
 
     .profile {
         width: calc(100vw - 200px);
+        min-width: 720px;
         align-items: center;
     }
     .biografy-dop {
@@ -550,9 +555,50 @@ label {
     .anketa-content {
         width: 100%;
     }
-
-
 }
+@media (max-width: 800px) {
+    h3 {
+        width: 100%;
+    }
+    .panel {
+        display: none;
+        
+    }
+    .zag {
+        margin-left: -20px;
+    }
+    .profile {
+        width: calc(100vw - 40px);
+        margin: 0 20px;
+        align-items: center;
+    }
+    .form-str p{
+        font-size: 14px;
+    }
+    .biografy-dop {
+        display: flex !important;
+        margin: 0 20px;
+        width: 100%;
+        min-width: 555px;
+    }
+    .biografy-img {
+        width: 20%;
+        max-width: 120px;
+    }
+    .biografy {
+        display: none;
+    }
+    .user-information {
+        width: 100%;
+    }
+    .anketa {
+        margin-top: 20px;
+    }
+    .anketa-content {
+        width: 100%;
+    }
+}
+
 @media (min-width: 650px) and (max-width: 800px) {
     .zag {
         margin-left: -20px;
