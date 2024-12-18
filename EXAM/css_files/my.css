@@ -1,3 +1,8 @@
+:root {
+    --main_vtn_color: rgb(125, 0, 58);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,20 +13,6 @@ img {
 }
 label {
     width: 90%;
-}
-
-.cont {
-    display: flex;
-    justify-content: center;
-}
-
-.zag {
-    display: flex;
-
-    font-family: 'TeX Gyre Adventor';
-
-    padding: 20px 30px;
-    margin: 0;
 }
 
 .panel {
@@ -36,7 +27,6 @@ label {
 
     z-index: 1;
 }
-
 .pages {
     display: flex;
     flex-direction: column;
@@ -45,12 +35,11 @@ label {
 
     margin-top: 20px;
 }
-
 .page {
     display: flex;
     align-items: center;
 
-    width: 90%;
+    width: 100%;
     height: max-content;
 
     padding: 15px 20px;
@@ -62,8 +51,16 @@ label {
     height: 30px;
 }
 
-.allin {
+.zag {
     display: flex;
+
+    font-family: 'TeX Gyre Adventor';
+
+    padding: 20px 30px;
+    margin: 0;
+}
+.allin, .profile {
+    display: none;
     flex-direction: column;
     justify-content: center;
 
@@ -71,7 +68,6 @@ label {
     margin-right: 20px;
     width: max-content;
 }
-
 .general-info {
     display: grid;
     grid-template-columns: 278px 278px 278px 278px;
@@ -79,7 +75,6 @@ label {
     margin-top: 40px;
 
 }
-
 .info {
     background-color: white;
     height: max-content;
@@ -88,14 +83,12 @@ label {
 
     box-shadow: 4px 3px 3px rgb(119, 119, 119);
 }
-
 .inside {
     width: 100%;
     height: 100%;
     padding: 0 15px;
     background-color: white;
 }
-
 .upper {
     position: relative;
     
@@ -178,7 +171,6 @@ label {
 .statistic-text p {
     margin: 0;
 }
-
 .tasks {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -284,6 +276,119 @@ label {
     display: flex;
     align-items: center;
 }
+
+.user-information {
+    display: flex;
+    width: 1300px;
+    height: max-content;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    
+}
+.anketa {
+    width: max-content;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 3px 3px rgb(119, 119, 119);
+}
+.anketa-content {
+    width: 900px;
+    height: 100%;
+    padding: 0 15px;
+}
+.anketa-header {
+    position: relative;
+    height: 85px;
+    width: 100%;
+}
+.a-h-absolite {
+    width: 100%;
+
+    padding: 10px 0;
+
+    position: absolute;
+    top: -20px;
+
+    color: white;
+    background-color: var(--main_vtn_color);
+}
+.register-info{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: max-content;
+}
+.input-string {
+    display: grid;
+
+    width: 100%;
+    height: 15%;
+
+    margin-bottom: 20px;
+}
+.form-str {
+    display: flex;
+    flex-direction: column;
+}
+.textar {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(191, 191, 191);
+    width: 100%;
+}
+.textar:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(108, 108, 108);
+}
+
+.form-str p{
+    margin: 0;
+    font-size: 12px;
+    color: rgb(130, 130, 130);
+}
+.form-str input {
+    border: 0;
+    border-bottom: 2px solid rgb(191, 191, 191);
+    width: 100%;
+}
+.form-str input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(108, 108, 108);
+}
+.la {
+    margin: 0;
+    margin: 5px 10px;
+}
+.btn {
+    margin: 0 30px;
+    padding: 0;
+    
+    color: white;
+}
+.register-info p button:hover {
+    color: white;
+}
+.register-info p button:focus {
+    outline: none;
+    color: white;
+}
+.biografy {
+    display: flex;
+
+    width: 370px;
+    height: 60%;
+    background-color: white;
+    box-shadow: 4px 3px 3px rgb(119, 119, 119);
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
 .footer {
     display: flex;
     align-items: center;
@@ -308,10 +413,10 @@ label {
     justify-content: end;
 }
 
-#list:checked + label {
+#list:checked + label, #list2:checked + label, #list3:checked + label, #list4:checked + label, #list5:checked + label  {
     .page {
         color: white;
-        background-color: rgb(125, 0, 58);
+        background-color: var(--main_vtn_color);
         width: 100%;
     }
     .page-image {

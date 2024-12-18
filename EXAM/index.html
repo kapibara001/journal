@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="css_files/my.css">
+    <link rel="stylesheet" href="css_files/profile.css">
+    <link rel="stylesheet" href="">
     <title>Admin-panel</title>
 </head>
 <body>
@@ -22,30 +24,45 @@
                 </div>
             </label>
             
-            <div class="page">
-                <div class="page-image">
-                    <img src="images/user-p.svg" alt="">
+            <input type="radio" name="list" id="list2" style="display: none;">
+            <label for="list2">
+                <div class="page">
+                    <div class="page-image">
+                        <img src="images/user-p.svg" alt="">
+                    </div>
+                    <span style="margin-left: 10px;">User Profile</span>
                 </div>
-                <span style="margin-left: 10px;">User Profile</span>
-            </div>
-            <div class="page">
-                <div class="page-image">
-                    <img src="images/map.svg" alt="">
+            </label>
+
+            <input type="radio" name="list" id="list3" style="display: none;">
+            <label for="list3">
+                <div class="page">
+                    <div class="page-image">
+                        <img src="images/map.svg" alt="">
+                    </div>
+                    <span style="margin-left: 10px;">Maps</span>
                 </div>
-                <span style="margin-left: 10px;">Maps</span>
-            </div>
-            <div class="page">
-                <div class="page-image">
-                    <img src="images/notifications.svg" alt="">
+            </label>
+
+            <input type="radio" name="list" id="list4" style="display: none;">
+            <label for="list4">
+                <div class="page">
+                    <div class="page-image">
+                        <img src="images/notifications.svg" alt="">
+                    </div>
+                    <span style="margin-left: 10px;">Notifications</span>
                 </div>
-                <span style="margin-left: 10px;">Notifications</span>
-            </div>
-            <div class="page">
-                <div class="page-image">
-                    <img src="images/support.svg" alt="">
+            </label>
+
+            <input type="radio" name="list" id="list5" style="display: none;">
+            <label for="list5">
+                <div class="page">
+                    <div class="page-image">
+                        <img src="images/support.svg" alt="">
+                    </div>
+                    <span style="margin-left: 10px;">Support</span>
                 </div>
-                <span style="margin-left: 10px;">Support</span>
-            </div>
+            </label>
         </div> 
     </div>
     
@@ -292,6 +309,135 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="footer-text">
+                <span>
+                    <a href="#">
+                        <b>ABOUT</b>
+                    </a>
+                </span>
+            </div>
+            <div class="footer-text">
+                <span>
+                    <a href="#">
+                        <b>BLOG</b>
+                    </a>
+                </span>
+            </div>
+            <div class="footer-text">
+                <span>
+                    <a href="#">
+                        <b>LICENSES</b>
+                    </a>
+                </span>
+            </div>
+            <span>2019 - made with love</span>
+        </div>
+    </div>
+
+    <div class="profile" style="display: flex;">
+        <h3 class="zag">
+            <div class="zag-img" style="display: none;">
+                <img src="images/menu.svg" alt="" style="width: 30px; margin-right: 10px;">
+            </div>
+            <b>User Profile</b>
+        </h3>
+
+        <div class="user-information">
+            <div class="anketa">
+                <div class="anketa-content">
+                    <div class="anketa-header">
+                        <div class="a-h-absolite">
+                            <p class="la" style="font-size: 21px;">Edit profile</p>
+                            <p class="la">Complite your profile</p>
+                        </div>    
+                    </div>
+                    <div class="register-info">
+                        <div class="input-string" style="grid-template-columns: 33.3% 33.3% 33.3%;">
+                            <div class="form-str" style="align-items: start;">
+                                <div style="width: 95%;" >
+                                    <p>Company</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-str" style="align-items: center;">
+                                <div style="width: 95%;">
+                                    <p>Username</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-str" style="align-items: end;">
+                                <div style="width: 95%;">
+                                    <p>Email address</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-string" style="grid-template-columns: 50% 50%">
+                            <div class="form-str" style="align-items: start;">
+                                <div style="width: 97.5%;">
+                                    <p>First name</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-str" style="align-items: end;">
+                                <div style="width: 97.5%;">
+                                    <p>Last name</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-string">
+                            <div class="form-str" style="align-items: start;">
+                                <div style="width: 100%;" >
+                                    <p>Address</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-string" style="grid-template-columns: 33.3% 33.3% 33.3%;">
+                            <div class="form-str" style="align-items: start;">
+                                <div style="width: 95%;" >
+                                    <p>City</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-str" style="align-items: center;">
+                                <div style="width: 95%;">
+                                    <p>Country</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-str" style="align-items: end;">
+                                <div style="width: 95%;">
+                                    <p>Postal address</p>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-string" style="height: 90px;">
+                            <div class="form-str" style="align-items: start;">
+                                <div style="width: 100%; height: max-content;">
+                                    <p>About me</p>
+                                    <textarea class="textar" rows="4" cols="100" style="word-wrap: break-word; white-space: pre-wrap; height: 90px;" ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin: 10px 0; text-align: right;">
+                            <button style="background-color: var(--main_vtn_color);">
+                                <span class="btn">UPDATE PROFILE</span>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="biografy" style="height: 300px;">
+                <div class="biografy-content">
+                    
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <div class="footer-text">
                 <span>
