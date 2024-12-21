@@ -18,7 +18,7 @@ label {
 .panel {
     min-width: none;
     width: 200px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
 
     background-color: rgb(255, 255, 255);
@@ -568,7 +568,7 @@ label {
         margin-left: -20px;
     }
     .profile {
-        width: calc(100vw - 40px);
+        width: 570px;
         margin: 0 20px;
         align-items: center;
     }
