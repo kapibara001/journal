@@ -45,7 +45,7 @@ body {
 
 .news {
     position: relative;
-    padding-right: 25px;
+    padding-right: 15px;
 }
 .news-content {
     display: flex;
@@ -72,7 +72,7 @@ body {
 }
 
 .rewards {
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .rewards-content {
