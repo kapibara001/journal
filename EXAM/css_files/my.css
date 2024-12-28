@@ -568,7 +568,7 @@ label {
         margin-left: -20px;
     }
     .profile {
-        width: 570px;
+        width: calc(100vw - 40px);
         margin: 0 20px;
         align-items: center;
     }
