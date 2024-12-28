@@ -20,6 +20,33 @@ body {
 .img-menu {
     width: 40px;
     aspect-ratio: 1/1;
+}
 
+.menu-category {
+    width: max-content;
+    margin: 0 30px;
+}
+.menu-category a{
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+}
+.menu-category:hover {
+    cursor: pointer;
+}
+.choose a{
+    color: white;
+}
 
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.news {
+   padding: 0 25px;
+}
+.news-content {
+    display: flex;
+
+    border: 1px solid black;
 }
