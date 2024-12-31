@@ -1,0 +1,49 @@
+.colors {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+    right: 40px;
+    top: 70px;
+}
+.color {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    margin-left: 10px;
+}
+
+.hm-content {
+    padding: 0 40px;
+}
+
+.category-hm {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: 170px;
+}
+
+.card-hm-left, .card-hm-center, .card-hm-right {
+    display: flex; 
+}
+.card-hm-left {
+    justify-content: start;
+}
+.card-hm-center {
+    justify-content: center;
+}
+.card-hm-right {
+    justify-content: end;
+};
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.white-text {
+    color: white;
+}
