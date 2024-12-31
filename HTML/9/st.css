@@ -1,0 +1,13 @@
+.settings {
+    margin: 0 40px;
+}
+
+.set-category {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: ;
+}
