@@ -85,6 +85,10 @@ body {
     grid-template-columns: 43% 14% 43%;
 }
 
+.m-bottom-20 {
+    margin-bottom: 15px;
+}
+
 
 
 
