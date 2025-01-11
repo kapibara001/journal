@@ -1,4 +1,4 @@
-/*let namee = prompt("1.Введите ваше имя")
+let namee = prompt("1.Введите ваше имя")
 alert(`Hello, ${namee}`);
 //alert("Hello " + namee);
 
@@ -39,7 +39,6 @@ if (number >= 100 && number <= 999) {
 } else {
     alert("Введите корректное трехзначное число.");
 }
-*/
 
 let fullnum = +prompt("Введите целое число");
 alert(fullnum % 2 == 0 ? `Четное число ${fullnum}` : `Нечетное число ${fullnum}`)
