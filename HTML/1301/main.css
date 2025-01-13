@@ -1,0 +1,63 @@
+body {
+    background-color: white !important;
+}
+.avatar-standart-size {
+    width: 42px;
+    aspect-ratio: 1/1;
+}
+.text-standart-size {
+    font-size: 18px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+    padding: 0 50px;
+}
+.header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.for-padding {
+    height: 500px;
+    width: 100%;
+
+    padding: 5px 80px;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 15% 25% 60%;
+}
+#nav + label {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(38, 205, 77, 0.901);
+}
+.nav-label {
+    width: 100%;
+    height: 50px;
+
+    margin: 2px 0;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+}
+.nav-label:hover {
+    background-color: rgb(210, 254, 254);
+    border-radius: 8px;
+}
+.mes-counter {
+    width: max-content;
+    height: max-content;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+}
