@@ -3,14 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forevents.css">
     <link rel="stylesheet" href="forindex.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/css/materialize.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/js/materialize.min.js"></script>
-    
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>My profile</title>
 </head>
 <body>
-    
+    <div class="header blue darken-4 z-depth-1">
+        <span style="font-size: 35px;">SN</span>
+        <div class="header-profile">
+            <img src="apps/avatar.png" alt="" class="avatar-standart-size" style="margin: 0 10px;">
+            <span class="text-standart-size">Maxim Oboskalov</span>
+        </div>
+    </div>
+    <div class="for-padding">
+        <div class="main-container-events">
+            <div class="navigation">
+                <input type="radio" id="nav" style="display: none;">
+                <label for="nav">
+                    <a href="index.html">
+                        <div class="nav-label">
+                            <img src="apps/prof.png" alt="" style="width: 30px; margin: 0 10px;">
+                            <span class="text-standart-size" style="color: rgb(16, 123, 246);">My profile</span>
+                        </div>
+                    </a>       
+                </label>
+
+                <input type="radio" id="news" style="display: none;">
+                <label for="news">
+                    <div class="nav-label">
+                        <img src="apps/news.png" alt="" style="width: 30px; margin: 0 10px;">
+                        <span class="text-standart-size" style="color: rgb(16, 123, 246);">News</span>
+                    </div>
+                </label>
+
+                <input type="radio" id="message" style="display: none;">
+                <label for="message">
+                    <a href="messages.html">
+                        <div class="nav-label">
+                            <img src="apps/mes.png" alt="" style="width: 30px; margin: 0 10px;">
+                            <span class="text-standart-size" style="color: rgb(16, 123, 246);">Message</span>
+                            <div style="width: 100%; display: flex; justify-content: end; margin-right: 20px;">
+                                <p style="margin: 0; border-radius: 5px;" class="mes-counter indigo darken-4">4</p>
+                            </div>
+                        </div>
+                    </a>
+                </label>
+
+                <input type="radio" id="friends" style="display: none;">
+                <label for="friends">
+                    <div class="nav-label">
+                        <img src="apps/friends.png" alt="" style="width: 30px; margin: 0 10px;">
+                        <span class="text-standart-size" style="color: rgb(16, 123, 246);">Friends</span>
+                    </div>
+                </label>
+
+                <input type="radio" id="events" style="display: none;">
+                <label for="events">
+                    <a href="events.html">
+                        <div class="nav-label" style="background-color: rgb(151, 255, 255);">
+                            <img src="apps/events.png" alt="" style="width: 30px; margin: 0 10px;">
+                            <span class="text-standart-size" style="color: rgb(16, 123, 246);">Events</span>
+                        </div>
+                    </a>
+                </label>
+
+                <input type="radio" id="media" style="display: none;">
+                <label for="media">
+                    <div class="nav-label">
+                        <img src="apps/media.png" alt="" style="width: 30px; margin: 0 10px;">
+                        <span class="text-standart-size" style="color: rgb(16, 123, 246);">Media</span>
+                    </div>
+                </label>
+            </div>
+            <div class="event-posts">
+                <div class="header-event">
+                    <h2 style="margin: 0 20px;">Events</h2>
+                    <div class="input-field s6 input">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Search</label>
+                        <div class="absas">
+                            <div>
+                                <img src="apps/search.png" style="width: 70%;">
+                            </div>
+                        </div>
+                        <div class="absas">
+                            <div>
+                                <img src="apps/plus.png" style="width: 70%;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post-profile flex-cont" style="height: 500px; background-image: url(apps/html5img.jpg); padding: 0;">
+                    <div style="width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.6);">
+                        <p style="height: 100%; display: flex; align-items: center; margin: 0 20px; font-size: 50px;"><b>HTML & CSS Workshop</b></p>
+                    </div>
+                    <div class="text-event">
+                        <div class="text-event-inside" style="color: black;">
+                            <div class="text-event-header">
+                                <div style="display: flex; align-items: center;">
+                                    <img src="apps/clock.png" alt="" style="height: 17px;">
+                                    <span style="margin: 0 5px; margin-right: 20px;">10:00 AM</span>
+                                </div>  
+                                <div style="display: flex; align-items: center;">
+                                    <img src="apps/calendar.gif" alt="" style="height: 17px;">
+                                    <span style="margin: 0 5px; margin-right: 20px;">January 14, 2025</span>
+                                </div>  
+                                <div style="display: flex; align-items: center;">
+                                    <img src="apps/location.png" alt="" style="height: 17px;">
+                                    <span style="margin: 0 5px; margin-right: 20px;">Russia, Yekaterinburg</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -225,3 +225,8 @@ body {
     width: 400px;
     height: 50px;
 }
+.flex-cont {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
