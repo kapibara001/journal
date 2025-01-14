@@ -28,7 +28,7 @@ body {
 }
 
 .for-padding {
-    height: 500px;
+    height: max-content;
     width: 100%;
 
     padding: 5px 80px;
